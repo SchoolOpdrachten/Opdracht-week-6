@@ -1,5 +1,3 @@
-C:\repos\Opdracht-week-6\bin\Debug\net6.0\appsettings.Development.json
-C:\repos\Opdracht-week-6\bin\Debug\net6.0\appsettings.json
 C:\repos\Opdracht-week-6\bin\Debug\net6.0\Opdracht-week-6.exe
 C:\repos\Opdracht-week-6\bin\Debug\net6.0\Opdracht-week-6.deps.json
 C:\repos\Opdracht-week-6\bin\Debug\net6.0\Opdracht-week-6.runtimeconfig.json

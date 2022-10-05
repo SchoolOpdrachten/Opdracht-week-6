@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IJGIjVxnvxAqaT3h52zr7tCfFNOfbbwRlPQeCquFWL82L02WMUE4v7nm80mm/Hbd6wAVtsU4aaLZxWP5YKqs2g==",
+  "dgSpecHash": "vofXTgmwaKVIOdphkpfaVktX0YsMsVCBN/ZKDJmzFw9l+Mqb71hxr4ZHlaQP2ACNhjzXt3yWB4ByfapfgvY9Mw==",
   "success": true,
-  "projectFilePath": "c:\\repos\\Opdracht-week-6\\Opdracht-week-6.csproj",
+  "projectFilePath": "C:\\repos\\Opdracht-week-6\\Opdracht-week-6.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
