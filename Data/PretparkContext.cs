@@ -10,4 +10,5 @@ public class PretparkContext : IdentityDbContext
         public DbSet<Models.Attractie> Attractie { get; set; } = default!;
 
         public DbSet<Gast>? Gast { get; set; }
+        public DbSet<Medewerker>? Medewerker { get; set; }
     }

@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -9,9 +10,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Opdracht_week_6.Migrations
 {
     [DbContext(typeof(PretparkContext))]
-    partial class PretparkContextModelSnapshot : ModelSnapshot
+    [Migration("20221005100700_2")]
+    partial class _2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "6.0.9");
@@ -239,21 +241,12 @@ namespace Opdracht_week_6.Migrations
                 {
                     b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
 
-                    b.Property<string>("Geslacht")
-                        .IsRequired()
-                        .HasColumnType("TEXT")
-                        .HasColumnName("Gast_Geslacht");
-
                     b.HasDiscriminator().HasValue("Gast");
                 });
 
             modelBuilder.Entity("Medewerker", b =>
                 {
                     b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
-
-                    b.Property<string>("Geslacht")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
 
                     b.HasDiscriminator().HasValue("Medewerker");
                 });
