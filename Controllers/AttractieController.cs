@@ -119,5 +119,30 @@ namespace Opdracht_week_6.Controllers
         {
             return (_context.Attractie?.Any(e => e.Id == id)).GetValueOrDefault();
         }
+
+        [HttpGet]
+        [Route("like/{naam}")]
+        public async Task<ActionResult<Attractie>> LikeAttractie(string naam)
+        {
+            var attractie = await _context.Attractie.FirstOrDefaultAsync(a => a.Naam == naam);
+            if (attractie == null)
+                return NotFound();
+            attractie.AantalLikes++;
+            await _context.SaveChangesAsync();
+            return attractie;
+        }
+
+
+        [HttpGet]
+        [Route("unlike/{naam}")]
+        public async Task<ActionResult<Attractie>> UnlikeAttractie(string naam)
+        {
+            var attractie = await _context.Attractie.SingleOrDefaultAsync(a => a.Naam == naam);
+            if (attractie == null)
+                return NotFound();
+            attractie.AantalLikes--;
+            _context.SaveChangesAsync();
+            return attractie;
+        }
     }
 }

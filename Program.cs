@@ -2,8 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddDbContext<PretparkContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("PretparkContext") ?? throw new InvalidOperationException("Connection string 'PretparkContext' not found.")));
+builder.Services.AddDbContext<PretparkContext>(options => options.UseSqlite("Data Source=PretparkDatabase.db"));
 
 // Add services to the container.
 

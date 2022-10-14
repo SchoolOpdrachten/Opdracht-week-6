@@ -1,8 +1,10 @@
 
 using Microsoft.AspNetCore.Identity;
 
-public class Gast : IdentityUser
+namespace Models;
+
+public class Gast : Persoon
 {
-    
+    public List<Attractie> GelikedAttracties { get; set; }
 
 }

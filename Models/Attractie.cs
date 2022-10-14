@@ -10,4 +10,6 @@ public class Attractie
     public string Naam { get; set; }
     public int Engheid { get; set; }
     public DateTime Bouwjaar { get; set; }
+
+    public int AantalLikes { get; set; }
 }

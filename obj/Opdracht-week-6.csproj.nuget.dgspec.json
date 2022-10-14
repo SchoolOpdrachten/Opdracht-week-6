@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\repos\\Opdracht-week-6\\Opdracht-week-6.csproj": {}
+    "C:\\repos\\WPFW opdr\\Opdracht-week-6\\Opdracht-week-6.csproj": {}
   },
   "projects": {
-    "C:\\repos\\Opdracht-week-6\\Opdracht-week-6.csproj": {
+    "C:\\repos\\WPFW opdr\\Opdracht-week-6\\Opdracht-week-6.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\repos\\Opdracht-week-6\\Opdracht-week-6.csproj",
+        "projectUniqueName": "C:\\repos\\WPFW opdr\\Opdracht-week-6\\Opdracht-week-6.csproj",
         "projectName": "Opdracht-week-6",
-        "projectPath": "C:\\repos\\Opdracht-week-6\\Opdracht-week-6.csproj",
+        "projectPath": "C:\\repos\\WPFW opdr\\Opdracht-week-6\\Opdracht-week-6.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\repos\\Opdracht-week-6\\obj\\",
+        "outputPath": "C:\\repos\\WPFW opdr\\Opdracht-week-6\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config"

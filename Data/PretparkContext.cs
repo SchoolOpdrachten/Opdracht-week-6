@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Models;
+
 public class PretparkContext : IdentityDbContext
     {
         public PretparkContext (DbContextOptions<PretparkContext> options)
@@ -7,7 +9,7 @@ public class PretparkContext : IdentityDbContext
         {
         }
 
-        public DbSet<Models.Attractie> Attractie { get; set; } = default!;
+        public DbSet<Attractie> Attractie { get; set; } = default!;
 
         public DbSet<Gast>? Gast { get; set; }
     }
