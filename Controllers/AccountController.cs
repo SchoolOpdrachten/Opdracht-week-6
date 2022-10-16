@@ -34,6 +34,8 @@ public class AccountController : ControllerBase
     [HttpPost("login")]
     public async Task<IActionResult> Login([FromBody] GebruikerLogin gebruikerLogin)
     {
+        // bij het inloggen onstaat er een fout. Maar ik weet niet waarom en kan niet vinden waar precies.
+        
         var _user = await _userManager.FindByNameAsync(gebruikerLogin.UserName);
         if (_user != null)
             if (await _userManager.CheckPasswordAsync(_user, gebruikerLogin.Password))
