@@ -8,8 +8,11 @@ public class PretparkContext : IdentityDbContext
             : base(options)
         {
         }
+        protected override void OnModelCreating(ModelBuilder b)
+        {
+            base.OnModelCreating(b);
+        }
 
         public DbSet<Attractie> Attractie { get; set; } = default!;
-
         public DbSet<Gast>? Gast { get; set; }
     }
