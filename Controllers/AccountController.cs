@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Models;
 
 namespace Opdracht_week_6.Controllers
 {
@@ -14,14 +15,14 @@ namespace Opdracht_week_6.Controllers
 
         [HttpPost]
         [Route("login")]
-        public async Task Login()
+        public async Task Login(Persoon persoon)
         {
             
         }
 
         [HttpPost]
         [Route("registreer")]
-        public async Task Registreer()
+        public async Task Registreer(Persoon persoon)
         {
             
         }
